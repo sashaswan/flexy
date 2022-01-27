@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
+
+p {
+    margin: 0;
+}
+
+.box {
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.userBox, .userBoxRight {
+    border-radius: 13px;
+    margin: 15px 15px 0 0;
+    height: auto;
+    background: #a29bfe;
+    padding: 25px;
+    width: 400px;
+}
+
+.userBoxRight {
+    margin: 25px 0 0 0;
+}
+
+.avatar img {
+    max-width: 117px;
+    height: 117px;
+}
+
+.userInfoBox {
+    margin-left: 25px;
+}
+
+.userInfoBox p {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.userInfo {
+    display: flex;
+}
+
+.actionButton {
+    background: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+.actionButton p {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.page {
+    background: #a29bfe;
+    border-radius: 13px;
+    margin-top: 25px;
+    height: auto;
+    display: flex;
+    overflow: scroll;
+}
+.page p {
+    padding-left: 5px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+.selectedPage {
+    font-weight: 600;
+    border-bottom: 4px solid #fff;
+}

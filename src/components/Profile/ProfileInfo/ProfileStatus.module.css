@@ -1,0 +1,11 @@
+.status {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.editStatus input {
+  border-radius: 13px;
+}

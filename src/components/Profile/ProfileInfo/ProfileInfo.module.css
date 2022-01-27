@@ -1,0 +1,21 @@
+.name, .aboutMe, .job {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.aboutMe, .job {
+    font-weight: 400;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.ava {
+    width: 100px;
+    margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+.new {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.postBlock {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.likes {
+    display: flex;
+    padding-left: 25px;
+}
+
+.likes img {
+    height: 50px;
+}
+
+.likesCount {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 25px;
+}
+.ava {
+    max-width: 100px;
+}

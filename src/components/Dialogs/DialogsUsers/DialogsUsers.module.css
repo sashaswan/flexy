@@ -1,0 +1,30 @@
+.users {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+    margin: 25px 0 10px 25px;
+}
+.name {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    color:#fff;
+}
+.info {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+}
+.infoBox {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.ava {
+    width: 100px;
+}

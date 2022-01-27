@@ -1,0 +1,10 @@
+.preloaderBox {
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.preloaderBox img {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
+
+.background {
+    max-width: 1366px;
+    height: 607px;
+    margin: 0 auto;
+    border-radius: 13px;
+    background: linear-gradient(rgba(0, 0, 0, 0.227),rgba(0, 0, 0, 0.2)), url('./../../img/space.jpg') no-repeat center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

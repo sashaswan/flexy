@@ -1,0 +1,19 @@
+.box {
+    max-width: 1366px;
+    height: 66px;
+    border-radius: 13px 13px 0 0;
+    margin: 0 auto;
+    background: #a29bfe;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+.text {
+    line-height: 66px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 25px;
+}

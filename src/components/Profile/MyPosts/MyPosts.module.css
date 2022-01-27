@@ -1,0 +1,53 @@
+.box {
+    max-width: 1366px;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 13px;
+}
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: left;
+    padding: 25px 0 0 25px;
+}
+.form {
+    display: flex;
+    margin-left: 25px;
+}
+.form input {
+    max-width: 607px;
+    height: 40px;
+    border-radius: 13px;
+    border: solid 2px #000;
+}
+.form input:focus {
+    border: 3px solid #a29bfe;
+}
+.form input::placeholder {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    color: #000;
+}
+.button:hover {
+    background:#a29bfe;
+}
+.button {
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background: black;
+    border-radius: 13px;
+    margin-left: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
