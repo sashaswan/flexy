@@ -1,5 +1,7 @@
 # Getting Started with Flexy
 
+![logo](https://github.com/sashaswan/flexy/blob/main/public/logo.svg)
+
 ### `npm start`
 
 Runs the app in the development mode.\
