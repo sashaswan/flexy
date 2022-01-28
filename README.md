@@ -1,4 +1,4 @@
-# Getting Started with Flexy
+### Getting Started with
 
 ![logo](https://github.com/sashaswan/flexy/blob/main/public/logo.svg)
 
