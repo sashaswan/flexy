@@ -1,0 +1,55 @@
+.loginBox {
+  max-width: 720px;
+  margin: 0 auto;
+  height: 400px;
+  background: #b129d7;
+  border-radius: 13px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginForm {
+  text-align: center;
+}
+.logo {
+  margin-bottom: 15px;
+}
+.logo img {
+  width: 124px;
+  text-align: center;
+  padding-top: 25px;
+}
+.login,
+.password {
+  margin-bottom: 15px;
+}
+.login input,
+.password input {
+  border-radius: 13px;
+  padding-left: 15px;
+}
+.login input::placeholder,
+.password input::placeholder,
+.rememberMe, .loginButton p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+.rememberMe {
+  color: #fff;
+}
+.loginButton button {
+  border-radius: 13px;
+  background: white;
+  width: 130px;
+  height: 30px;
+}
+.loginReq, .passReq {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 15px;
+}

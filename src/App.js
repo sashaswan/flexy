@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import { Route } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
-import LoginPage from './components/login/login';
+import Login from './components/login/login';
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <Route path='/users'
         render={() => <UsersContainer />} />
       <Route path='/login'
-        render={() => <LoginPage />} />
+        render={() => <Login />} />
       <Footer />
     </div>
   );

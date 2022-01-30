@@ -5,7 +5,7 @@
     border-radius: 13px;
     margin-top: 10px;
     display: flex;
-    background: #a29bfe;
+    background: #B129D7;
 }
 
 .topBox {
@@ -46,7 +46,7 @@
     -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
     -moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
     box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
-    background: #a29bfe;
+    background: #B129D7;
 }
 
 .left {
@@ -54,7 +54,7 @@
     height: 607px;
     border-radius: 13px 0 0 13px;
     overflow: scroll;
-    background: #a29bfe;
+    background: #B129D7;
 }
 
 .right {
@@ -62,7 +62,7 @@
     height: 607px;
     border-radius: 0 13px 13px 0;
     overflow: scroll;
-    background: #a29bfe;
+    background: #B129D7;
 }
 
 .send {
@@ -70,7 +70,7 @@
     width: 966px;
     position: sticky;
     bottom: 0;
-    background: #a29bfe;
+    background: #B129D7;
 }
 
 .flex {
