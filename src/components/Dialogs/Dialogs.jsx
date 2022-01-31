@@ -3,6 +3,8 @@ import s from './Dialogs.module.css';
 import Messages from './Messages/Messages';
 import DialogsUsers from './DialogsUsers/DialogsUsers';
 import button from './../../img/send.svg';
+import { Field, Form } from 'react-final-form';
+import { required } from '../common/validators';
 
 const Dialogs = (props) => {
 
@@ -10,18 +12,8 @@ const Dialogs = (props) => {
 
     let usersArray = state.dialogsData.map(u => <DialogsUsers name={u.name} key={u.id} id={u.id} />);
 
-    let messagesArray = state.messagesData.map(m => <Messages message={m.message} key={m.id}/>);
+    let messagesArray = state.messagesData.map(m => <Messages message={m.message} key={m.id} />);
 
-    let newMessageText = state.newMessageText;
-
-    let onSendMessageClick = () => {
-        props.sendMessage();
-    }
-
-    let onNewMessageChange = (e) => {
-        let body = e.target.value;
-        props.updateNewMessageBody(body);
-    }  
     return (
         <div>
             <div className={s.box}>
@@ -40,18 +32,44 @@ const Dialogs = (props) => {
                     {messagesArray}
                     <div className={s.send}>
                         <div className={s.form}>
-                            <div className={s.flex}>
-                                <input type='text' placeholder='Enter your message' value={newMessageText} onChange={onNewMessageChange}></input>
-                                <button type='sumbit' onClick={onSendMessageClick}>
-                                    <img src={button} alt='sendButton' />
-                                </button>
-                            </div>
+                            <AddNewMessageBody sendMessage={props.sendMessage} />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     );
+}
+
+const AddNewMessageBody = (props) => {
+    return (
+        <Form
+            initialValues={{
+                message: '',
+            }}
+            onSubmit={values => {
+                props.sendMessage(values.message);
+            }}
+        >
+            {({ handleSubmit }) => (
+                <form className={s.flex} onSubmit={handleSubmit}>
+                    <Field name='message' validate={required}>
+                        {({ input, meta }) => (
+                            <div className={s.addMessageInput}>
+                                <input {...input} placeholder='Enter your message' type='text' />
+                                <div className={s.requiredBox}>
+                                    {meta.error && meta.touched && <p className={s.messageReq}>{meta.error}</p>}
+                                </div>
+                            </div>
+                        )}
+                    </Field>
+                    <button type='submit'>
+                        <img src={button} alt='sendButton' />
+                    </button>
+                </form>
+            )}
+        </Form>
+    )
 }
 
 export default Dialogs;

@@ -103,3 +103,16 @@
     transform: rotate(90deg);
     margin-left: 15px;
 }
+.messageReq {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.addMessageInput {
+    width: 850px;
+}
+.requiredBox {
+    padding-top: 5px;
+    position: absolute;
+}
