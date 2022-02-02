@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './../../img/logo.svg';
 import s from './login.module.css';
-import { Field, Form } from 'react-final-form';
+import { Formik, Field, Form } from 'formik';
 import { connect } from 'react-redux';
 import { login } from '../../redux/authReducer';
 import { Redirect } from 'react-router-dom';
-import { required } from '../common/validators';
+import { validateEmail } from '../common/validators';
 
 const LoginForm = (props) => {
     if (props.isAuth) {
@@ -17,57 +17,42 @@ const LoginForm = (props) => {
 }
 
 const Login = (props) => {
+    const onSubmit = (values, { setSubmitting, setStatus }) => {
+        props.login(values.email, values.password, values.rememberMe, setStatus)
+        setSubmitting(false)
+    };
     return (
         <div className={s.loginBox}>
-            <Form initialValues={{
+            <Formik initialValues={{
                 email: '',
                 password: '',
                 rememberMe: false
             }}
-                onSubmit={values => {
-                    props.login(values.email, values.password, values.rememberMe);
-                }}
+                onSubmit={onSubmit}
             >
-                {({ handleSubmit, submitting }) => (
-                    <form className={s.loginForm} onSubmit={handleSubmit}>
+                {({ errors, touched, isValidating, status }) => (
+                    <Form className={s.loginForm}>
                         <div className={s.logo}>
                             <img src={logo} alt='logo' />
                         </div>
                         <div className={s.login}>
-                            <Field name="email" validate={required} >
-                                {({ input, meta }) => (
-                                    <div>
-                                        <input placeholder={'Email'} type="email" {...input} />
-                                        {meta.error && meta.touched && <p className={s.loginReq}>{meta.error}</p>}
-                                    </div>
-                                )}
-                            </Field>
+                            <Field id="email" name="email" placeholder={'Email'} type="email" validate={validateEmail} />
+                            {errors.email && touched.email && <p className={s.loginReq}>{errors.email}</p>}
                         </div>
                         <div className={s.password}>
-                            <Field name="password" validate={required} >
-                                {({ input, meta }) => (
-                                    <div>
-                                        <input placeholder={'Password'} type="password" {...input} />
-                                        {meta.error && meta.touched && <p className={s.loginReq}>{meta.error}</p>}
-                                    </div>
-                                )}
-                            </Field>
+                            <Field id="password" name="password" placeholder={'Password'} type="password" />
+                            <p className={s.loginReq}>{status}</p>
                         </div>
                         <div className={s.rememberMe}>
-                            <Field
-                                id="rememberMe"
-                                component={'input'}
-                                name="rememberMe"
-                                type="checkbox"
-                            /> remember me
+                            <Field id="rememberMe" name="rememberMe" type="checkbox" /> remember me
                         </div>
                         <div className={s.loginButton}>
-                            <button type="submit" disabled={submitting}><p>Login</p></button>
+                            <button type="submit" ><p>Login</p></button>
                         </div>
-                    </form>
+                    </Form>
                 )}
-            </Form>
-        </div>
+            </Formik>
+        </div >
     )
 }
 

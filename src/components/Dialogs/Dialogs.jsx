@@ -3,8 +3,8 @@ import s from './Dialogs.module.css';
 import Messages from './Messages/Messages';
 import DialogsUsers from './DialogsUsers/DialogsUsers';
 import button from './../../img/send.svg';
-import { Field, Form } from 'react-final-form';
-import { required } from '../common/validators';
+import { Formik, Field, Form } from 'formik';
+import { validatePost } from '../common/validators';
 
 const Dialogs = (props) => {
 
@@ -42,33 +42,31 @@ const Dialogs = (props) => {
 }
 
 const AddNewMessageBody = (props) => {
+    const onSubmit = (values) => {
+        props.sendMessage(values.message);
+    };
     return (
-        <Form
+        <Formik
             initialValues={{
                 message: '',
             }}
-            onSubmit={values => {
-                props.sendMessage(values.message);
-            }}
+            validationSchema={validatePost}
+            onSubmit={onSubmit}
         >
-            {({ handleSubmit }) => (
-                <form className={s.flex} onSubmit={handleSubmit}>
-                    <Field name='message' validate={required}>
-                        {({ input, meta }) => (
-                            <div className={s.addMessageInput}>
-                                <input {...input} placeholder='Enter your message' type='text' />
-                                <div className={s.requiredBox}>
-                                    {meta.error && meta.touched && <p className={s.messageReq}>{meta.error}</p>}
-                                </div>
-                            </div>
-                        )}
-                    </Field>
+            {({ errors, touched }) => (
+                <Form className={s.flex} >
+                    <div className={s.addMessageInput}>
+                        <Field name='message' placeholder='Enter your message' type='text' />
+                        <div className={s.requiredBox}>
+                            {errors.message && touched.message ? (<p className={s.messageReq}>{errors.message}</p>) : null}
+                        </div>
+                    </div>
                     <button type='submit'>
                         <img src={button} alt='sendButton' />
                     </button>
-                </form>
+                </Form>
             )}
-        </Form>
+        </Formik>
     )
 }
 
