@@ -5,20 +5,27 @@ import {
     unfollow,
     setCurrentPage,
     toggleIsFolowingProgress,
-    getUsers
+    requestUsers
 } from '../../redux/usersReducer';
 import Users from './users';
 import Preloader from '../common/Preloader/Preloader';
 import { withRouter } from 'react-router-dom';
-import { withAuthRedirect } from './../../hoc/withAuthRedirect';
 import { compose } from 'redux';
+import {
+    getUsers,
+    getPageSize,
+    getTotalUsersCount,
+    getCurrentPage,
+    getIsFetching,
+    getFollowingInProgress
+} from './../../redux/usersSelectors';
 
 class UsersContainer extends React.Component {
     componentDidMount() {
-        this.props.getUsers(this.props.currentPage, this.props.pageSize);
+        this.props.requestUsers(this.props.currentPage, this.props.pageSize);
     }
     onPageChanged = (pageNumber) => {
-        this.props.getUsers(pageNumber, this.props.pageSize);
+        this.props.requestUsers(pageNumber, this.props.pageSize);
         this.props.setCurrentPage(pageNumber);
     }
     render() {
@@ -38,7 +45,7 @@ class UsersContainer extends React.Component {
     }
 }
 
-let mapStateToProps = (state) => {
+/* let mapStateToProps = (state) => {
     return {
         users: state.usersPage.users,
         pageSize: state.usersPage.pageSize,
@@ -47,9 +54,20 @@ let mapStateToProps = (state) => {
         isFetching: state.usersPage.isFetching,
         followingInProgress: state.usersPage.followingInProgress
     }
+} */ 
+
+let mapStateToProps = (state) => {
+    return {
+        users: getUsers(state),
+        pageSize: getPageSize(state),
+        totalUsersCount: getTotalUsersCount(state),
+        currentPage: getCurrentPage(state),
+        isFetching: getIsFetching(state),
+        followingInProgress: getFollowingInProgress(state)
+    }
 }
 
 export default compose(
-    connect(mapStateToProps, { follow, unfollow, setCurrentPage, toggleIsFolowingProgress, getUsers }),
+    connect(mapStateToProps, { follow, unfollow, setCurrentPage, toggleIsFolowingProgress, requestUsers }),
     withRouter
 )(UsersContainer);
