@@ -10,7 +10,7 @@ let Users = (props) => {
         pages.push(i);
     };
     return <div className={s.box}>
-        {props.users.map(u => <div key={u.id}>
+        {props.users.map(u => <div className={s.usersBlock} key={u.id}>
             <div className={s.userBox}>
                 <div className={s.userInfo}>
                     <div className={s.avatar}>

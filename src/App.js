@@ -19,21 +19,23 @@ class App extends Component {
   }
 
   render() {
-    if (!this.props.initialized){
-      return <Preloader /> 
+    if (!this.props.initialized) {
+      return <Preloader />
     }
     return (
       <div className="App">
-        <HeaderContainer />
-        <Route path='/profile/:userId?'
-          render={() => <ProfileContainer />} />
-        <Route path='/dialogs'
-          render={() => <DialogsContainer />} />
-        <Route path='/users'
-          render={() => <UsersContainer />} />
-        <Route path='/login'
-          render={() => <Login />} />
-        <Footer />
+        <div className='wrapper'>
+          <HeaderContainer />
+          <Route path='/profile/:userId?'
+            render={() => <ProfileContainer />} />
+          <Route path='/dialogs'
+            render={() => <DialogsContainer />} />
+          <Route path='/users'
+            render={() => <UsersContainer />} />
+          <Route path='/login'
+            render={() => <Login />} />
+          <Footer />
+        </div>
       </div>
     );
   }

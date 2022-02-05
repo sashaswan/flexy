@@ -1,23 +1,29 @@
 .loginBlock {
-    background-color: #B129D7;
-    height: 66px;
-    max-width: 1366px;
-    margin: 0 auto;
-    border-radius: 13px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: right;
+  background-color: #b129d7;
+  height: 66px;
+  max-width: 1366px;
+  margin: 0 auto;
+  border-radius: 13px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: right;
 }
 
-.Links, .loginBlock a {
-    margin-right: 25px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    line-height: 66px;
-    cursor: pointer;
+.Links,
+.loginBlock a {
+  margin-right: 15px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 66px;
+  cursor: pointer;
+}
+
+.logoutButton {
+  width: 20px;
+  height: 20px;
 }

@@ -4,7 +4,7 @@ import NewPost from './NewPost/NewPost';
 import { Formik, Field, Form } from 'formik';
 import { validatePost } from '../../common/validators';
 
-const MyPosts = (props) => {
+const MyPosts = React.memo(props => {
 
     let postArray = props.postText.map(n => (<NewPost text={n.text} likes={n.likes} key={n.id} />));
 
@@ -16,8 +16,8 @@ const MyPosts = (props) => {
                 {postArray}
             </div>
         </div>
-    );
-}
+    )
+});
 
 const AddNewPostText = (props) => {
     const onSubmit = (values) => {

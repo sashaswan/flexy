@@ -13,9 +13,13 @@ export const validateEmail = (value) => {
 export const validatePost = Yup.object().shape({
     newPost: Yup.string()
         .min(2, 'Too Short!')
-        .max(300, 'Too Long!, only 300 symbols allowed.'),
+        .max(300, 'Too Long!, only 300 symbols allowed.')
+        .required('Required'),
+});
+
+export const validateMessage = Yup.object().shape({
     message: Yup.string()
         .min(2, 'Too Short!')
         .max(1000, 'Too Long!, only 1000 symbols allowed.')
-
+        .required('Required'),
 });

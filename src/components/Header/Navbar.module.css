@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.Navbar {
-    margin: 0 10px 0 10px;
-}
-
 .NavbarContent {
     max-width: 1366px;
     height: 66px;
@@ -20,7 +16,9 @@ li {
     justify-content: end;
     margin-right: 25px;
 }
-
+.item {
+    text-align: center;
+}
 .item a {
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;

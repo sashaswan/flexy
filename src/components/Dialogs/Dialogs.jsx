@@ -4,7 +4,7 @@ import Messages from './Messages/Messages';
 import DialogsUsers from './DialogsUsers/DialogsUsers';
 import button from './../../img/send.svg';
 import { Formik, Field, Form } from 'formik';
-import { validatePost } from '../common/validators';
+import { validateMessage } from '../common/validators';
 
 const Dialogs = (props) => {
 
@@ -50,7 +50,7 @@ const AddNewMessageBody = (props) => {
             initialValues={{
                 message: '',
             }}
-            validationSchema={validatePost}
+            validationSchema={validateMessage}
             onSubmit={onSubmit}
         >
             {({ errors, touched }) => (

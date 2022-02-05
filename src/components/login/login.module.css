@@ -31,7 +31,8 @@
 }
 .login input::placeholder,
 .password input::placeholder,
-.rememberMe, .loginButton p {
+.rememberMe,
+.loginButton p {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -46,7 +47,8 @@
   width: 130px;
   height: 30px;
 }
-.loginReq, .passReq {
+.loginReq,
+.passReq {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 14px;
   font-weight: 600;
