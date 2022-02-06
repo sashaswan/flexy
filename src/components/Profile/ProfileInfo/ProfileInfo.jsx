@@ -4,20 +4,20 @@ import s from './ProfileInfo.module.css';
 import Preloader from '../../common/Preloader/Preloader';
 import ProfileStatusWithHooks from './ProfileStatusWithHooks';
 
-const profileInfo = (props) => {
-    if (!props.profile) {
+const profileInfo = ({profile, status, updateStatus}) => {
+    if (!profile) {
         return <Preloader/>
     }
     return (
         <div>
             <div className={s.ava}>
-                <img src={props.profile.photos.small != null ? props.profile.photos.small : avatar} alt='profilePicture'/>
+                <img src={profile.photos.small != null ? profile.photos.small : avatar} alt='profilePicture'/>
             </div>
             <div className={s.description}>
-                <p className={s.name}>{props.profile.fullName}</p>
-                <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
-                <p className={s.aboutMe}>{props.profile.aboutMe}</p>
-                <p className={s.job}>{props.profile.lookingForAJobDescription}</p>
+                <p className={s.name}>{profile.fullName}</p>
+                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
+                <p className={s.aboutMe}>{profile.aboutMe}</p>
+                <p className={s.job}>{profile.lookingForAJobDescription}</p>
             </div>
         </div>
     );

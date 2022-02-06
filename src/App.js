@@ -3,14 +3,13 @@ import './App.css';
 import ProfileContainer from './components/Profile/ProfileContainer';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Footer from './components/Footer/Footer';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Login from './components/login/login';
 import { connect } from 'react-redux';
 import { initializeApp } from './redux/appReducer';
 import { compose } from 'redux';
-import { withRouter } from 'react-router-dom';
 import Preloader from './components/common/Preloader/Preloader';
 
 class App extends Component {

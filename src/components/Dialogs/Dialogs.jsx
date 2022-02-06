@@ -4,7 +4,7 @@ import Messages from './Messages/Messages';
 import DialogsUsers from './DialogsUsers/DialogsUsers';
 import button from './../../img/send.svg';
 import { Formik, Field, Form } from 'formik';
-import { validateMessage } from '../common/validators';
+import { validateMessage } from '../common/FormControls';
 
 const Dialogs = (props) => {
 

@@ -2,7 +2,7 @@ import React from 'react';
 import s from './MyPosts.module.css';
 import NewPost from './NewPost/NewPost';
 import { Formik, Field, Form } from 'formik';
-import { validatePost } from '../../common/validators';
+import { validatePost } from '../../common/FormControls';
 
 const MyPosts = React.memo(props => {
 

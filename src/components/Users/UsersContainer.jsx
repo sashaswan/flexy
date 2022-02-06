@@ -7,7 +7,7 @@ import {
     toggleIsFolowingProgress,
     requestUsers
 } from '../../redux/usersReducer';
-import Users from './users';
+import Users from './Users';
 import Preloader from '../common/Preloader/Preloader';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
@@ -22,10 +22,12 @@ import {
 
 class UsersContainer extends React.Component {
     componentDidMount() {
-        this.props.requestUsers(this.props.currentPage, this.props.pageSize);
+        const { currentPage, pageSize } = this.props;
+        this.props.requestUsers(currentPage, pageSize);
     }
     onPageChanged = (pageNumber) => {
-        this.props.requestUsers(pageNumber, this.props.pageSize);
+        const {pageSize} = this.props
+        this.props.requestUsers(pageNumber, pageSize);
         this.props.setCurrentPage(pageNumber);
     }
     render() {
@@ -54,7 +56,7 @@ class UsersContainer extends React.Component {
         isFetching: state.usersPage.isFetching,
         followingInProgress: state.usersPage.followingInProgress
     }
-} */ 
+} */
 
 let mapStateToProps = (state) => {
     return {
