@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import NewPost from './NewPost/NewPost';
-import { Formik, Field, Form } from 'formik';
-import { validatePost } from '../../common/FormControls';
+import { Formik, Form } from 'formik';
+import { validatePost, createField } from '../../common/FormControls';
 
 const MyPosts = React.memo(props => {
 
@@ -34,7 +34,7 @@ const AddNewPostText = (props) => {
             {({ errors, touched }) => (
                 <Form className={s.form}>
                     <div className={s.addPostInput}>
-                        <Field name='newPost' placeholder='New Post' type='text' className={s.input} />
+                        {createField("New Post", "newPost", 'text', validatePost)}
                         {errors.newPost && touched.newPost ? (<p className={s.postreq}>{errors.newPost}</p>) : null}
                     </div>
                     <button className={s.button} type='submit'>New Post</button>

@@ -4,7 +4,7 @@
   margin-top: 25px;
   height: auto;
   display: flex;
-  overflow: scroll;
+  justify-content: center;
 }
 .page p {
   padding-left: 5px;
@@ -14,8 +14,13 @@
   line-height: 50px;
   color: #fff;
   cursor: pointer;
+  padding: 0 5px 0 5px;
 }
 .selectedPage {
   font-weight: 600;
   border-bottom: 4px solid #fff;
+}
+.arrows {
+  max-width: 20px;
+  cursor: pointer;
 }

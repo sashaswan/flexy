@@ -3,8 +3,8 @@ import s from './Dialogs.module.css';
 import Messages from './Messages/Messages';
 import DialogsUsers from './DialogsUsers/DialogsUsers';
 import button from './../../img/send.svg';
-import { Formik, Field, Form } from 'formik';
-import { validateMessage } from '../common/FormControls';
+import { Formik, Form } from 'formik';
+import { validateMessage, createField } from '../common/FormControls';
 
 const Dialogs = (props) => {
 
@@ -56,7 +56,7 @@ const AddNewMessageBody = (props) => {
             {({ errors, touched }) => (
                 <Form className={s.flex} >
                     <div className={s.addMessageInput}>
-                        <Field name='message' placeholder='Enter your message' type='text' />
+                        {createField("Enter your message", "message", 'text', validateMessage)}
                         <div className={s.requiredBox}>
                             {errors.message && touched.message ? (<p className={s.messageReq}>{errors.message}</p>) : null}
                         </div>
