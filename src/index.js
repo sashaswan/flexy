@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Provider store={store}>
         <App />
       </Provider>
