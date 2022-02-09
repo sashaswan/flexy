@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flexy/static/css/main.4cd6e51e.css",
-    "main.js": "/flexy/static/js/main.52b73eeb.js",
+    "main.js": "/flexy/static/js/main.14803a01.js",
     "static/css/780.232ff1f1.chunk.css": "/flexy/static/css/780.232ff1f1.chunk.css",
     "static/js/780.323b54a1.chunk.js": "/flexy/static/js/780.323b54a1.chunk.js",
     "static/css/82.d3e61901.chunk.css": "/flexy/static/css/82.d3e61901.chunk.css",
@@ -16,7 +16,7 @@
     "index.html": "/flexy/index.html",
     "static/media/send.svg": "/flexy/static/media/send.d2c70d8fa43230bcd510a6b06f983166.svg",
     "main.4cd6e51e.css.map": "/flexy/static/css/main.4cd6e51e.css.map",
-    "main.52b73eeb.js.map": "/flexy/static/js/main.52b73eeb.js.map",
+    "main.14803a01.js.map": "/flexy/static/js/main.14803a01.js.map",
     "780.232ff1f1.chunk.css.map": "/flexy/static/css/780.232ff1f1.chunk.css.map",
     "780.323b54a1.chunk.js.map": "/flexy/static/js/780.323b54a1.chunk.js.map",
     "82.d3e61901.chunk.css.map": "/flexy/static/css/82.d3e61901.chunk.css.map",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.4cd6e51e.css",
-    "static/js/main.52b73eeb.js"
+    "static/js/main.14803a01.js"
   ]
 }
