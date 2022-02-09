@@ -16,7 +16,9 @@ const profileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
     return (
         <div>
             <div className={s.ava}>
-                <img src={profile.photos.small != null ? profile.photos.small : avatar} alt='profilePicture'/>
+                <img src={profile.photos.small != null ? profile.photos.small : avatar} 
+                className={s.circle}
+                alt='profilePicture'/>
             </div>
             <div className={s.description}>
                 <p className={s.name}>{profile.fullName}</p>
