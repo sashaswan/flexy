@@ -1,0 +1,27 @@
+.background {
+  max-width: 1366px;
+  height: 607px;
+  margin: 0 auto;
+  border-radius: 13px;
+  margin-bottom: 25px;
+  background: url("./../../img/preview.png") no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 217px;
+}
+.info p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-align: center;
+}
+.down {
+    width: 24px;
+}

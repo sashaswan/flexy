@@ -10,7 +10,9 @@ const Navbar = () => {
             <div className={s.Navbar}>
                 <div className={s.NavbarContent}>
                     <div className={s.logo}>
-                        <img alt="pageLogo" src={logo} />
+                        <NavLink to='/'>
+                            <img alt="pageLogo" src={logo} />
+                        </NavLink>
                     </div>
                     <Grid className={s.center}>
                         <Cell large={1} medium={2} small={4}>

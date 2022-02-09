@@ -10,6 +10,7 @@ import { initializeApp } from './redux/appReducer';
 import { compose } from 'redux';
 import Preloader from './components/common/Preloader/Preloader';
 import { withSuspense } from './hoc/withSuspense';
+import Preview from './components/Preview/Preview';
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 
@@ -26,6 +27,7 @@ class App extends Component {
       <div className="App">
         <div className='wrapper'>
           <HeaderContainer />
+          <Route exact path="/" render={Preview} />
           <Route path='/profile/:userId?'
             render={withSuspense(ProfileContainer)} />
           <Route path='/dialogs'
