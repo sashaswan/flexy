@@ -26,7 +26,7 @@
   border: solid 2px #000;
 }
 .form input:focus {
-  border: 3px solid #a29bfe;
+  border: 3px solid #b129d7;
 }
 .form input::placeholder {
   font-family: "Be Vietnam Pro", sans-serif;
@@ -36,7 +36,7 @@
   color: #000;
 }
 .button:hover {
-  background: #a29bfe;
+  background: #b129d7;
 }
 .button {
   width: 120px;
