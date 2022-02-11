@@ -1,0 +1,43 @@
+.socialInfo input {
+  max-width: 607px;
+  border-radius: 13px;
+  border: solid 2px #000;
+}
+.socialInfo input:focus {
+  border: 3px solid #b129d7;
+}
+.editButton {
+  width: 120px;
+  height: 40px;
+  background: black;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.editButton:hover {
+  color: #fff;
+  background: #b129d7;
+}
+.editButton p {
+  color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+}
+.lookingForAJob {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+.req {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0;
+  text-transform: uppercase;
+  color: #b129d7;
+}

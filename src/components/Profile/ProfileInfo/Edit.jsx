@@ -11,7 +11,7 @@ const Edit = ({ profile, isOwner, saveProfile }) => {
             <p>Contacts</p>
             <div className={s.box}>
                 {editMode
-                    ? <ProfileDataForm profile={profile} saveProfile={saveProfile} goToSaveMode={() => { setEditMode(false) }}/>
+                    ? <ProfileDataForm profile={profile} saveProfile={saveProfile} goToSaveMode={() => { setEditMode(false) }} />
                     : <ProfileData profile={profile} isOwner={isOwner} goToEditMode={() => { setEditMode(true) }} />}
             </div>
         </div>
@@ -28,12 +28,11 @@ const ProfileData = ({ profile, isOwner, goToEditMode }) => {
             })}
             <p>
                 Looking for a job :
-                {profile.lookingForAJob ? "yes" : "no"}
+                <b className={s.text}>{profile.lookingForAJob ? "yes" : "no"}</b>
             </p>
             {profile.lookingForAJob &&
                 <p>
-                    My skills:
-                    {profile.lookingForAJobDescription}
+                    My skills:<b className={s.text}>{profile.lookingForAJobDescription}</b>
                 </p>}
             {isOwner &&
                 <button onClick={goToEditMode} className={s.editButton}>
@@ -47,7 +46,7 @@ const ProfileData = ({ profile, isOwner, goToEditMode }) => {
 const Contact = ({ contactTitle, contactValue }) => {
     return (
         <div>
-            <p>{contactTitle} : {contactValue}</p>
+            <p>{contactTitle} : <b className={s.text}>{contactValue}</b></p>
         </div>
     )
 }
