@@ -1,7 +1,6 @@
 .center {
     display: flex;
     align-items: flex-start;
-    width: 966px;
     padding: 25px 0 0 25px;
 }
 
@@ -27,4 +26,13 @@
 }
 .ava {
     width: 100px;
+}
+@media (max-width: 612px) {
+    .center {
+        display: block;
+        padding: 15px 10px;
+    }
+    .message {
+        margin: 15px 0 0 0;
+    }
 }
