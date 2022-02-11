@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import s from './App.css';
 import Footer from './components/Footer/Footer';
 import { Route, withRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
@@ -14,6 +14,7 @@ import store from './redux/reduxStore';
 import Preview from './components/Preview/Preview';
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import CoockieConsent from 'react-cookie-consent';
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 
@@ -39,6 +40,13 @@ class App extends Component {
             render={() => <UsersContainer />} />
           <Route path='/login'
             render={() => <Login />} />
+            <CoockieConsent 
+            debug={true} 
+            style={{background: '#b129d7'}}
+            buttonStyle={{color: '#000', background: '#fff', borderRadius: '13px'}}
+            buttonText='Ok great!'
+            expires={7}
+            >This site uses cookies.</CoockieConsent>
           <Footer />
         </div>
       </div>
