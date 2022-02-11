@@ -24,7 +24,6 @@ export const validateMessage = Yup.object().shape({
         .max(1000, 'Too Long!, only 1000 symbols allowed.')
         .required('Required'),
 });
-
 export const createField = (placeholder, name, type, validate, props = {}, text='',) => (
     <div>
         <Field

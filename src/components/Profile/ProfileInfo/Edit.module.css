@@ -1,0 +1,46 @@
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.wrapper p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 38px;
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left;
+  line-height: 35px;
+  padding: 25px 0 25px 25px;
+}
+.box {
+  max-width: 607px;
+  height: auto;
+  margin: 0 0 15px 25px;
+}
+.box p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0;
+}
+.editButton {
+  width: 120px;
+  height: 40px;
+  background: black;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.editButton:hover {
+  color: #fff;
+  background: #b129d7;
+}
+.editButton p {
+  color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+}
