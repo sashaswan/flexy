@@ -12,21 +12,21 @@ const LoginForm = (props) => {
         return <Redirect to={'/profile'} />
     }
     return (
-        <Login login={props.login} />
+        <Login login={props.login} captchaUrl={props.captchaUrl} />
     )
 }
 
-const Login = ({ login }) => {
-    const onSubmit = (values, { setSubmitting, setStatus }) => {
-        login(values.email, values.password, values.rememberMe, setStatus)
-        setSubmitting(false)
+const Login = ({ login, captchaUrl }) => {
+    const onSubmit = (values, { setStatus }) => {
+        login(values.email, values.password, values.rememberMe, setStatus, values.captcha)
     };
     return (
         <div className={s.loginBox}>
             <Formik initialValues={{
                 email: '',
                 password: '',
-                rememberMe: false
+                rememberMe: false,
+                captcha: ''
             }}
                 onSubmit={onSubmit}
             >
@@ -46,6 +46,11 @@ const Login = ({ login }) => {
                         <div className={s.rememberMe}>
                             {createField(null, "rememberMe", 'checkbox', null, null, 'remember me')}
                         </div>
+                        <div className={s.captchaBlock}>
+                            {captchaUrl && <img src={captchaUrl} alt='captcha' />}
+                            {captchaUrl && createField("Symbols from image", "captcha", 'text')}
+                        </div>
+
                         <div className={s.loginButton}>
                             <button type="submit" ><p>Login</p></button>
                         </div>
@@ -57,6 +62,7 @@ const Login = ({ login }) => {
 }
 
 const mapStateToPrors = (state) => ({
+    captchaUrl: state.auth.captchaUrl,
     isAuth: state.auth.isAuth
 })
 
