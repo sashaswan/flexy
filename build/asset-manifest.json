@@ -1,15 +1,10 @@
 {
   "files": {
     "main.css": "/flexy/static/css/main.d7d9fce2.css",
-<<<<<<< HEAD
     "main.js": "/flexy/static/js/main.412c811f.js",
     "static/css/460.0eb78159.chunk.css": "/flexy/static/css/460.0eb78159.chunk.css",
-=======
-    "main.js": "/flexy/static/js/main.7f251b2c.js",
-    "static/css/460.4f9a672b.chunk.css": "/flexy/static/css/460.4f9a672b.chunk.css",
->>>>>>> parent of 823f573 (mobile devices update)
     "static/js/460.01a7e2a5.chunk.js": "/flexy/static/js/460.01a7e2a5.chunk.js",
-    "static/css/82.d3e61901.chunk.css": "/flexy/static/css/82.d3e61901.chunk.css",
+    "static/css/82.20b5b5e0.chunk.css": "/flexy/static/css/82.20b5b5e0.chunk.css",
     "static/js/82.65222a40.chunk.js": "/flexy/static/js/82.65222a40.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/flexy/static/js/787.28cb0dcd.chunk.js",
     "static/media/space.jpg": "/flexy/static/media/space.6d54427934977900d59a.jpg",
@@ -22,24 +17,15 @@
     "index.html": "/flexy/index.html",
     "static/media/send.svg": "/flexy/static/media/send.d2c70d8fa43230bcd510a6b06f983166.svg",
     "main.d7d9fce2.css.map": "/flexy/static/css/main.d7d9fce2.css.map",
-<<<<<<< HEAD
     "main.412c811f.js.map": "/flexy/static/js/main.412c811f.js.map",
     "460.0eb78159.chunk.css.map": "/flexy/static/css/460.0eb78159.chunk.css.map",
-=======
-    "main.7f251b2c.js.map": "/flexy/static/js/main.7f251b2c.js.map",
-    "460.4f9a672b.chunk.css.map": "/flexy/static/css/460.4f9a672b.chunk.css.map",
->>>>>>> parent of 823f573 (mobile devices update)
     "460.01a7e2a5.chunk.js.map": "/flexy/static/js/460.01a7e2a5.chunk.js.map",
-    "82.d3e61901.chunk.css.map": "/flexy/static/css/82.d3e61901.chunk.css.map",
+    "82.20b5b5e0.chunk.css.map": "/flexy/static/css/82.20b5b5e0.chunk.css.map",
     "82.65222a40.chunk.js.map": "/flexy/static/js/82.65222a40.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/flexy/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7d9fce2.css",
-<<<<<<< HEAD
     "static/js/main.412c811f.js"
-=======
-    "static/js/main.7f251b2c.js"
->>>>>>> parent of 823f573 (mobile devices update)
   ]
 }

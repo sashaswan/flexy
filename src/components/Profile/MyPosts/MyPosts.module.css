@@ -63,5 +63,6 @@
 @media (max-width: 780px) {
     .title {padding-left: 0px;}
     .form {margin-left: 0px;} 
-    .button {line-height: 15px; font-size: 12px;}
+    .button {line-height: 15px;}
+    .box {padding-left: 15px;}
 }
