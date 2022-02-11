@@ -1,7 +1,7 @@
 .box {
     max-width: 1366px;
     margin: 0 auto;
-    min-height: 707px;
+    height: 607px;
     border-radius: 13px;
     margin-top: 10px;
     display: flex;
@@ -9,7 +9,8 @@
 }
 
 .topBox {
-    height: 102px;
+    width: 966px;
+    height: 77px;
     border-radius: 0 13px 0 0;
     padding-left: 25px;
     display: flex;
@@ -21,7 +22,7 @@
     top: 0;
 }
 
-.name, .info {
+.name {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -31,7 +32,12 @@
 }
 
 .info {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
     font-weight: 400;
+    margin: 0;
+    text-align: left;
+    color: #fff;
 }
 
 .stick {
@@ -45,7 +51,7 @@
 
 .left {
     width: 400px;
-    height: 707px;
+    height: 607px;
     border-radius: 13px 0 0 13px;
     overflow: scroll;
     background: #B129D7;
@@ -53,16 +59,15 @@
 
 .right {
     width: 966px;
-    height: 707px;
+    height: 607px;
     border-radius: 0 13px 13px 0;
     overflow: scroll;
     background: #B129D7;
-    display: flex;
-    flex-direction: column;
 }
 
 .send {
     height: 77px;
+    width: 966px;
     position: sticky;
     bottom: 0;
     background: #B129D7;
@@ -75,6 +80,7 @@
 }
 
 .form input {
+    max-width: 850px;
     border-radius: 13px;
     margin: 0;
 }
@@ -87,7 +93,7 @@
 }
 
 .form button {
-    min-width: 50px;
+    width: 50px;
     height: 77px;
     cursor: pointer;
     -webkit-transform: rotate(90deg);
@@ -95,7 +101,7 @@
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-    margin: 0 15px 0 15px;
+    margin-left: 15px;
 }
 .messageReq {
     color: #fff;
@@ -110,12 +116,3 @@
     padding-top: 5px;
     position: absolute;
 }
-
-@media (max-width: 840px) {
-    .left {
-        display: none;
-    }
-    .right {
-        border-radius: 13px
-    }
-  }
