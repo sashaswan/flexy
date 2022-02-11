@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import s from './App.css';
 import Footer from './components/Footer/Footer';
 import { Route, withRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
@@ -41,6 +41,7 @@ class App extends Component {
           <Route path='/login'
             render={() => <Login />} />
             <CoockieConsent 
+            debug={true} 
             style={{background: '#b129d7'}}
             buttonStyle={{color: '#000', background: '#fff', borderRadius: '13px'}}
             buttonText='Ok great!'
