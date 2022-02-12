@@ -22,7 +22,7 @@ Open [https://sashaswan.github.io/flexy](https://sashaswan.github.io/flexy) to v
 
 ![dialogs](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/dialogs.png)
 
-### Dialogs
+### Users
 
 ![users](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/users.png)
 
