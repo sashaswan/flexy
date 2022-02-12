@@ -8,4 +8,4 @@ Open [https://sashaswan.github.io/flexy](https://sashaswan.github.io/flexy) to v
 
 ### Login Page
 
-![login](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/login.png)
+![login]()
