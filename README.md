@@ -2,15 +2,28 @@
 
 ![logo](https://github.com/sashaswan/flexy/blob/main/public/logo.svg)
 
-### `npm start`
+### `GitHub Pages`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://sashaswan.github.io/flexy](https://sashaswan.github.io/flexy) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Login
 
-### `npm test`
+![login](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Preview
+
+![preview](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/preview.png)
+
+### Profile
+
+![profile](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/profile.png)
+
+### Dialogs
+
+![dialogs](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/dialogs.png)
+
+### Users
+
+![users](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/users.png)
+
+

@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://sashaswan.github.io/flexy/",
+  "homepage": "https://sashaswan.github.io/flexy/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -15,6 +15,7 @@
     "install": "^0.13.0",
     "npm": "^8.4.0",
     "react": "^16.3.1",
+    "react-cookie-consent": "^7.3.1",
     "react-dom": "^16.13.1",
     "react-foundation": "^0.9.2",
     "react-redux": "^7.2.6",
