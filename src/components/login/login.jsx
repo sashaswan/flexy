@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { login } from '../../redux/authReducer';
 import { Redirect } from 'react-router-dom';
 import { validateEmail, createField } from '../common/FormControls';
+import Cookies from 'js-cookie';
 
 const LoginForm = (props) => {
     if (props.isAuth) {
@@ -18,6 +19,7 @@ const LoginForm = (props) => {
 
 const Login = ({ login, captchaUrl }) => {
     const onSubmit = (values, { setStatus }) => {
+        Cookies.set('email', 'password')
         login(values.email, values.password, values.rememberMe, setStatus, values.captcha)
     };
     return (
