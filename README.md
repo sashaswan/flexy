@@ -12,7 +12,7 @@ Open [https://sashaswan.github.io/flexy](https://sashaswan.github.io/flexy) to v
 
 ### Preview
 
-![preview](https://github.com/sashaswan/flexy/tree/main/public/PagesShoots)
+![preview](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/preview.png)
 
 ### Profile
 
