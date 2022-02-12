@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import s from './App.css';
+import './App.css';
 import Footer from './components/Footer/Footer';
 import { Route, withRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
