@@ -6,6 +6,24 @@
 
 Open [https://sashaswan.github.io/flexy](https://sashaswan.github.io/flexy) to view it in your browser.
 
-### Login Page
+### Login
 
 ![login](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/login.png)
+
+### Preview
+
+![preview](https://github.com/sashaswan/flexy/tree/main/public/PagesShoots)
+
+### Profile
+
+![profile](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/profile.png)
+
+### Dialogs
+
+![dialogs](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/dialogs.png)
+
+### Dialogs
+
+![users](https://github.com/sashaswan/flexy/blob/main/public/PagesShoots/users.png)
+
+
