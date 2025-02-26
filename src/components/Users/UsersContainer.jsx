@@ -7,7 +7,7 @@ import {
     toggleIsFolowingProgress,
     requestUsers
 } from '../../redux/usersReducer';
-import Users from './Users';
+import Users from './users';
 import Preloader from '../common/Preloader/Preloader';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
@@ -26,7 +26,7 @@ class UsersContainer extends React.Component {
         this.props.requestUsers(currentPage, pageSize);
     }
     onPageChanged = (pageNumber) => {
-        const {pageSize} = this.props
+        const { pageSize } = this.props
         this.props.requestUsers(pageNumber, pageSize);
         this.props.setCurrentPage(pageNumber);
     }

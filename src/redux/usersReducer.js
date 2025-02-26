@@ -96,6 +96,16 @@ export const requestUsers = (page, pageSize) => {
         dispatch(toggleIsFetching(false));
         dispatch(setUsers(data.items));
         dispatch(setTotalItemsCount(data.totalCount));
+
+        // Fetch follow status for each user
+        for (let user of data.items) {
+            let followStatus = await usersAPI.checkFollowStatus(user.id);
+            if (followStatus) {
+                dispatch(followSuccess(user.id));
+            } else {
+                dispatch(unfollowSuccess(user.id));
+            }
+        }
     }
 }
 
