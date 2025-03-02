@@ -5,6 +5,7 @@ import { Route, withRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Login from './components/login/login';
+import RegisterForm from './components/signup/register';
 import { connect } from 'react-redux';
 import { initializeApp } from './redux/appReducer';
 import { compose } from 'redux';
@@ -39,6 +40,8 @@ class App extends Component {
             render={() => <UsersContainer />} />
           <Route path='/login'
             render={() => <Login />} />
+          <Route path='/register'
+            render={() => <RegisterForm />} />
           <Footer />
         </div>
       </div>

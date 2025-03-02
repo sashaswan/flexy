@@ -41,6 +41,20 @@ export const getAuthUserData = () => async (dispatch) => {
     }
 }
 
+export const register = (email, password, username) => async (dispatch) => {
+    try {
+        let response = await authAPI.register(email, password, username);
+        if (response.data.resultCode === 0) {
+            // After successful registration, log the user in
+            return dispatch(login(email, password, false));
+        } else {
+            throw new Error(response.data.messages[0] || 'Registration failed');
+        }
+    } catch (error) {
+        throw error;
+    }
+}
+
 export const login = (email, password, rememberMe, setStatus, captcha) => async (dispatch) => {
     let response = await authAPI.login(email, password, rememberMe, captcha);
     if (response.data.resultCode === 0) {

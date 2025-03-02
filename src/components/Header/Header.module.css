@@ -27,3 +27,25 @@
   width: 20px;
   height: 20px;
 }
+
+.authLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.authLinks a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.authLinks a:hover {
+    color: #b129d7;
+}
+
+.divider {
+    color: #666;
+    margin: 0 5px;
+}
